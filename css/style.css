@@ -1,14 +1,1 @@
-#results {
-	display: none;
-  margin-top: 10px;
-}
-#results span {
-	font-size: 1.2em;
-	font-weight: bold;
-}
-.footer {
-  color: #8f8f8f;
-  padding-top: 25px;
-  text-align: center;
-  font-size: 0.85em;
-}
+body{font-family:Oxygen,sans-serif;background:#3bc4d7;color:#fff;font-weight:700}input.inline{display:inline-block;width:4em;border:none;border-bottom:2px solid #3bc4d7}.center-block{display:block;margin:0 auto;width:50%}.btn.btn-primary{background:#3bc4d7}.btn.btn-findmore{background:#fff;color:#3bc4d7;border-bottom:5px solid #f2f2f2}.row{text-align:center;border-bottom:6px solid #3bc4d7}.row.row-last{border-bottom:none}.row.row-alt{background:#3bc4d7}.jumbotron{background:#3bc4d7;text-align:center;color:#fff;padding:25px;min-height:75%}.jumbotron .jumbotron-container{background:#fff;color:#3bc4d7;font-weight:700;padding:50px;border-radius:5px;display:block;margin:0 auto;width:50%}.jumbotron .jumbotron-container .button-container{margin-top:20px}#error{display:none;margin-bottom:10px}#results{display:none}#results span{font-size:1.4em;font-weight:700}.footer{font-size:.95em;margin:0;padding:20px}.footer i{font-size:.9em}.footer a{color:red}

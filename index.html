@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>How bad is my data cap?</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How bad is my data cap?</title>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    	I currently have <input type="text" id="speed" />mbps internet and a <input type="text" id="cap" />GB data cap.
-	<input type="submit" class="button" value="Calculate" />
+</head>
 
-	<div id="results">
-	<div>
-		If you had no data cap, you could download <span id="theoretical-cap"></span> GB each month. You can use <span id="percentage-of-theoretical-cap"></span>% of your maximum bandwidth every month.
-	</div>
-	<div>
-		This is roughly <span id="num-days-allowed-by-cap"></span> of full speed internet every month.
-	</div>
+<body>
+  <div class="container">
+    <div class="col-md-12">
+      <h1 class="text-center">How bad is my data cap?</h1>
+      <div class="question text-center">
+        I currently have
+        <input type="text" id="speed" /> mbps internet and a
+        <input type="text" id="cap" /> GB data cap.
+        <div>
+          <input type="submit" class="btn btn-primary" value="Calculate" />
+        </div>
+      </div>
+      <div id="results" class="alert alert-success">
+        <div>
+          If you had no data cap, you could download <span id="theoretical-cap"></span> each month. Your ISP limits the amount
+          of data you can transfer to
+          <span id="percentage-of-theoretical-cap"></span> of your maximum bandwidth every month.
+        </div>
+        <div>
+          This is roughly <span id="num-days-allowed-by-cap"></span> of full speed internet every month.
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div>FCC/Congress contact details</div>
-	</div>
+  <div class="footer container">
+    Made with <span class="glyphicon glyphicon-heart"></span> by <a href="http://rowdypixel.com/" target="_blank">rowdypixel</a>.
+  </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bandwidth.js"></script>
-  </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bandwidth.js"></script>
+</body>
+
 </html>

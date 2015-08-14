@@ -1,0 +1,14 @@
+#results {
+	display: none;
+  margin-top: 10px;
+}
+#results span {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.footer {
+  color: #8f8f8f;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 0.85em;
+}
